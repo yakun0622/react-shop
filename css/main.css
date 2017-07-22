@@ -1,0 +1,49 @@
+@charset "UTF-8";
+* {
+    font-size: 13px;
+    font-family: "Microsoft YaHei", Arial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    margin: 0;
+    padding-top: 60px;
+
+}
+
+input {outline:none}
+textarea {
+    outline:none;
+    overflow:hidden;
+    resize: none;
+}
+button {
+    outline:none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;}
+li {list-style-type:none;}
+a {text-decoration:none;  }
+.blur {
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+}
+
+#full_dialog{
+    display: flex;
+    position: fixed;
+    left:0;
+    top: 0;
+    transition: background-color .3s ease, opacity .3s ease;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#full_dialog_body{
+    transition: all .3s ease;
+}
